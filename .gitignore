@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+.next/
+out/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Local temp logs
+*.log
