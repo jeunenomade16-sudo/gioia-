@@ -846,14 +846,11 @@ a {
     order: 2; /* Move image below menu list on mobile */
   }
 
-  /* ── PERFORMANCE MOBILE : désactiver animations et drop-shadows ── */
+  /* ── PERFORMANCE MOBILE : désactiver drop-shadows (coûteux en GPU) ── */
   .pres-food-img,
   .card-food-img,
   .menu-header-img .section-food-img {
-    animation: none !important;
     filter: none !important;
-    will-change: auto !important;
-    transition: none !important;
   }
 
   .pres-food-img:hover,
