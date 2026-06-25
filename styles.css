@@ -640,11 +640,12 @@ a {
 ═══════════════════════════════════════════ */
 @media (max-width: 1024px) {
   .page-wrapper {
-    margin: 0 auto;
-    border: none;
-    width: 100%;
+    margin: 20px auto;
+    border: 1px solid var(--color-border);
+    width: calc(100% - 30px); /* Leaves a 15px margin on the left and right of mobile viewports */
     max-width: 100%;
     overflow-x: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12); /* Shadow on mobile to stand out */
   }
 
   .hero-split,
