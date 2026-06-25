@@ -18,16 +18,22 @@
   padding: 0;
 }
 
+html {
+  overflow-x: clip;
+  -webkit-overflow-scrolling: touch; /* Smooth momentum scroll on iOS */
+}
+
 body {
   background-color: var(--color-bg);
   background-image: url("outer-bg.webp");
   background-size: 1000px 1000px;
   background-repeat: repeat;
+  background-attachment: scroll;
   color: var(--color-text);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
-  overflow-x: hidden;
+  min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -646,7 +652,7 @@ a {
     border: 1px solid var(--color-border);
     width: calc(100% - 30px); /* Leaves a 15px margin on the left and right of mobile viewports */
     max-width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12); /* Shadow on mobile to stand out */
   }
 
