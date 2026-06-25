@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
+    <!-- Lenis Smooth Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.2.3/dist/lenis.css">
 </head>
 <body>
 
@@ -35,72 +37,15 @@
         </header>
 
         <!-- ═══════════════════════════════════════════
-             HERO — Titre + Image principale (spaghetti)
-             Layout: Texte gauche | Image droite
+             SECTION 1 : Qui Sommes-nous + Vidéo
         ═══════════════════════════════════════════ -->
-        <section class="hero">
-            <!-- Bandeau titre full width -->
-            <!-- Bandeau défilant infini — Bienvenue en 4 langues -->
-            <div class="hero-marquee">
-                <div class="marquee-track">
-                    <!-- Contenu dupliqué pour boucle sans couture -->
-                    <span class="marquee-word">Bienvenue</span>
-                    <span class="marquee-sep">✦</span>
-                    <span class="marquee-word">Benvenuti</span>
-                    <span class="marquee-sep">✦</span>
-                    <span class="marquee-word">Welcome</span>
-                    <span class="marquee-sep">✦</span>
-                    <span class="marquee-word marquee-arabic">أهلاً وسهلاً</span>
-                    <span class="marquee-sep">✦</span>
-                    <!-- Copie pour seamless loop -->
-                    <span class="marquee-word">Bienvenue</span>
-                    <span class="marquee-sep">✦</span>
-                    <span class="marquee-word">Benvenuti</span>
-                    <span class="marquee-sep">✦</span>
-                    <span class="marquee-word">Welcome</span>
-                    <span class="marquee-sep">✦</span>
-                    <span class="marquee-word marquee-arabic">أهلاً وسهلاً</span>
-                    <span class="marquee-sep">✦</span>
-                </div>
-            </div>
-            <!-- Split: texte | image -->
-            <div class="hero-split">
-                <div class="hero-text-col">
-                    <p class="intro-text">
-                        <span class="dropcap">G</span>ioia, c'est plus qu'un restaurant. C'est une invitation à prendre le temps et à savourer chaque moment de la journée. Née d'une envie de simplicité et d'élégance, Gioia propose un cadre chaleureux aux lignes sobres, où chaque espace invite à profiter de l'instant.
-                    </p>
-                </div>
-                <div class="hero-img-col">
-                    <video class="hero-video" autoplay muted loop playsinline>
-                        <source src="snaptik_7605280926033038612_v3.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-        </section>
-
-        <div class="section-divider"></div>
-
-        <!-- ═══════════════════════════════════════════
-             PRESENTATION — Qui Sommes-nous
-             Layout: Bloc rouge (image pizza) | Texte droite
-        ═══════════════════════════════════════════ -->
-        <section class="presentation">
-            <!-- Colonne gauche : bloc rouge + pizza qui dépasse -->
-            <div class="presentation-left">
+        <section class="presentation" data-reveal>
+            <!-- Colonne gauche : texte -->
+            <div class="presentation-body">
                 <div class="section-meta">Apprenez à nous connaître</div>
                 <h2 class="section-title">Qui <br>Sommes-nous</h2>
-                <div class="pres-img-wrap">
-                    <img
-                        src="vecteezy_hot-margherita-pizza-with-fresh-basil-isolated_54968024.png"
-                        alt="Pizza Margherita"
-                        class="pres-food-img"
-                    >
-                </div>
-            </div>
-            <!-- Colonne droite : texte -->
-            <div class="presentation-body">
                 <p class="presentation-text">
-                    Le matin, on s'y retrouve autour d'un brunch généreux et d'un café soigneusement préparé.<br>
+                    <span class="dropcap">L</span>e matin, on s'y retrouve autour d'un brunch généreux et d'un café soigneusement préparé.<br>
                     À midi, la cuisine italienne s'exprime avec justesse et caractère.<br>
                     L'après-midi, le temps d'une pause.<br>
                     Le soir, la lumière se fait plus douce, l'ambiance plus intime, et la dolce vita prend place.
@@ -115,25 +60,53 @@
                 </p>
                 <a href="#" class="cta-link">Découvrir</a>
             </div>
+
+            <!-- Colonne droite : vidéo -->
+            <div class="hero-img-col">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="snaptik_7605280926033038612_v3.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
 
         <div class="section-divider"></div>
 
         <!-- ═══════════════════════════════════════════
-             MENU — Header avec assiette alfredo
-             Layout: Titre | Image Alfredo
+             SECTION 2 : Bannière Pizza
         ═══════════════════════════════════════════ -->
-        <section class="menu-section">
+        <section class="pizza-banner" data-reveal>
+            <div class="presentation-img-col pizza-banner-content">
+                <div class="pres-red-text pizza-banner-text">
+                    <p class="intro-text-white">
+                        <span class="dropcap-white">G</span>ioia, c'est plus qu'un restaurant. C'est une invitation à prendre le temps et à savourer chaque moment de la journée. Née d'une envie de simplicité et d'élégance, Gioia propose un cadre chaleureux aux lignes sobres, où chaque espace invite à profiter de l'instant.
+                    </p>
+                </div>
+                <div class="pres-img-wrap">
+                    <img
+                        src="vecteezy_hot-margherita-pizza-with-fresh-basil-isolated_54968024.png"
+                        alt="Pizza Margherita"
+                        class="pres-food-img"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══════════════════════════════════════════
+             MENU — La Cuisine (Plats, Pâtes, Desserts)
+        ═══════════════════════════════════════════ -->
+        <section class="menu-section" data-reveal>
             <div class="menu-section-header">
                 <div class="menu-header-text">
-                    <div class="section-meta">Explorez nos saveurs</div>
-                    <h2 class="section-title">Notre <br>Carte</h2>
+                    <div class="section-meta">Faits maison avec passion</div>
+                    <h2 class="section-title">La <br>Cuisine</h2>
                 </div>
                 <div class="menu-header-img">
                     <img
-                        src="vecteezy_ai-generated-creamy-chicken-alfredo-pasta-bow-on-transparent_36498052.png"
-                        alt="Pasta Alfredo"
-                        class="section-food-img"
+                        src="vecteezy_delicious-plate-of-spaghetti-with-fresh-tomatoes-and-basil_55237060.png"
+                        alt="Spaghetti Pomodoro"
+                        class="section-food-img section-food-img--spaghetti"
                     >
                 </div>
             </div>
@@ -141,10 +114,89 @@
             <!-- GRILLE DES CARTES -->
             <div class="menu-grid">
 
-                <!-- CARTE 1 : Mocktails & Mojitos -->
-                <div class="menu-card">
+                <!-- CARTE 1 : Nos Pizzas -->
+                <div class="menu-card" data-reveal>
                     <div class="menu-card-header">
-                        <span class="menu-card-icon">🍸</span>
+                        <h3 class="menu-card-title">Nos Pizzas</h3>
+                    </div>
+                    <div class="menu-list">
+                        <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Margherita</span><span class="menu-item-desc">Sauce tomate basilic, mozzarella fior di latte, huile d'olive</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 200 DA</span></div>
+                        <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Regina</span><span class="menu-item-desc">Sauce tomate, mozzarella fior di latte, jambon de dinde, champignons</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 400 DA</span></div>
+                        <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Diavola</span><span class="menu-item-desc">Sauce tomate, mozzarella, salami piquant, piment, origan</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 500 DA</span></div>
+                        <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Quattro Formaggi</span><span class="menu-item-desc">Mozzarella, gorgonzola, chèvre, grana padano, crème fraîche</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 600 DA</span></div>
+                        <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Tartufata</span><span class="menu-item-desc">Crème de truffe, mozzarella fior di latte, champignons, roquette</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 800 DA</span></div>
+                    </div>
+                </div>
+
+                <!-- CARTE 2 : Nos Pâtes — avec assiette alfredo à droite -->
+                <div class="menu-card menu-card--with-img" data-reveal>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Nos Pâtes</h3>
+                        </div>
+                        <div class="menu-list">
+                            <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Creamy Chicken Alfredo</span><span class="menu-item-desc">Pâtes fraîches, crème de parmesan, poulet grillé, champignons, persil</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 500 DA</span></div>
+                            <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Spaghetti Pomodoro &amp; Basilico</span><span class="menu-item-desc">Sauce tomate maison, ail, basilic frais, huile d'olive, parmesan</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 100 DA</span></div>
+                            <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Penne all'Arrabbiata</span><span class="menu-item-desc">Sauce tomate piquante, piments rouges, ail, persil frais</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 100 DA</span></div>
+                            <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Tagliatelle al Pesto</span><span class="menu-item-desc">Pesto de basilic frais, pignons de pin, huile d'olive extra vierge, parmesan</span></div><span class="menu-item-dots"></span><span class="menu-item-price">1 300 DA</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-card-img-col">
+                        <img
+                            src="vecteezy_ai-generated-creamy-chicken-alfredo-pasta-bow-on-transparent_36498052.png"
+                            alt="Pasta Alfredo"
+                            class="card-food-img card-food-img--alfredo"
+                        >
+                    </div>
+                </div>
+
+                <!-- CARTE 3 : Nos Desserts — s'étale sur 2 colonnes (span 2) avec Tiramisu à gauche -->
+                <div class="menu-card menu-card--with-img menu-card--span-2" data-reveal>
+                    <div class="menu-card-img-col menu-card-img-col--left">
+                        <img
+                            src="vecteezy_delicious-tiramisu-dessert-slice-with-cocoa-powder-and-fresh_79744383.png"
+                            alt="Tiramisu"
+                            class="card-food-img card-food-img--tiramisu"
+                        >
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Nos Desserts</h3>
+                        </div>
+                        <div class="menu-list">
+                            <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Tiramisu Classico</span><span class="menu-item-desc">Biscuit imbibé de café, mascarpone onctueux, cacao amer en poudre</span></div><span class="menu-item-dots"></span><span class="menu-item-price">800 DA</span></div>
+                            <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Panna Cotta Vanille</span><span class="menu-item-desc">Crème infusée à la vanille, avec coulis de fruits rouges maison ou caramel</span></div><span class="menu-item-dots"></span><span class="menu-item-price">750 DA</span></div>
+                            <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Fondant au Chocolat</span><span class="menu-item-desc">Cœur coulant au chocolat noir intense, servi avec une boule de glace vanille</span></div><span class="menu-item-dots"></span><span class="menu-item-price">850 DA</span></div>
+                            <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Affogato al Caffè</span><span class="menu-item-desc">Une boule de glace vanille artisanale noyée dans un double espresso chaud</span></div><span class="menu-item-dots"></span><span class="menu-item-price">600 DA</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══════════════════════════════════════════
+             MENU — Le Café & Boissons
+        ═══════════════════════════════════════════ -->
+        <section class="menu-section" data-reveal>
+            <div class="menu-section-header">
+                <div class="menu-header-text">
+                    <div class="section-meta">Explorez nos saveurs</div>
+                    <h2 class="section-title">Le Café <br>&amp; Boissons</h2>
+                </div>
+                <div class="menu-header-quote">
+                    <p class="header-quote-text">« Prendre le temps de savourer chaque moment de la journée, autour d'une boisson d'exception. »</p>
+                </div>
+            </div>
+
+            <!-- GRILLE DES CARTES -->
+            <div class="menu-grid">
+
+                <!-- CARTE 1 : Mocktails & Mojitos -->
+                <div class="menu-card" data-reveal>
+                    <div class="menu-card-header">
                         <h3 class="menu-card-title">Mocktails &amp; Mojitos</h3>
                     </div>
                     <div class="menu-list">
@@ -159,10 +211,9 @@
                 </div>
 
                 <!-- CARTE 2 : Cafés — avec tasse de café à droite -->
-                <div class="menu-card menu-card--with-img">
+                <div class="menu-card menu-card--with-img" data-reveal>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
-                            <span class="menu-card-icon">☕</span>
                             <h3 class="menu-card-title">Cafés Chauds ou Froids</h3>
                         </div>
                         <div class="menu-list">
@@ -175,7 +226,7 @@
                             <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Peanut Butter Latte</span></div><span class="menu-item-dots"></span><span class="menu-item-price">800 DA</span></div>
                             <div class="menu-item"><div class="menu-item-info"><span class="menu-item-name">Crema di caffè</span></div><span class="menu-item-dots"></span><span class="menu-item-price">500 DA</span></div>
                         </div>
-                        <div class="menu-card-supplement">➕ Supplément (+ 100 DA) : Caramel, Vanille, Cookie, Tiramisu, Noisette, Chocolat blanc.</div>
+                        <div class="menu-card-supplement">Supplément (+ 100 DA) : Caramel, Vanille, Cookie, Tiramisu, Noisette, Chocolat blanc.</div>
                     </div>
                     <div class="menu-card-img-col">
                         <img
@@ -186,8 +237,8 @@
                     </div>
                 </div>
 
-                <!-- CARTE 3 : Matcha, Chocolats & Thés — avec tiramisu -->
-                <div class="menu-card menu-card--with-img">
+                <!-- CARTE 3 : Matcha, Chocolats & Thés — avec matcha à gauche -->
+                <div class="menu-card menu-card--with-img" data-reveal>
                     <div class="menu-card-img-col menu-card-img-col--left">
                         <img
                             src="vecteezy_refreshing-matcha-beverage-close-up_62392278.png"
@@ -197,7 +248,6 @@
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
-                            <span class="menu-card-icon">🍵</span>
                             <h3 class="menu-card-title">Matcha, Chocolats &amp; Thés</h3>
                         </div>
                         <div class="menu-list">
@@ -214,9 +264,8 @@
                 </div>
 
                 <!-- CARTE 4 : Smoothies & Frais -->
-                <div class="menu-card">
+                <div class="menu-card" data-reveal>
                     <div class="menu-card-header">
-                        <span class="menu-card-icon">🥤</span>
                         <h3 class="menu-card-title">Smoothies &amp; Frais</h3>
                     </div>
                     <div class="menu-list">
@@ -233,6 +282,116 @@
             </div>
         </section>
 
+        <div class="section-divider"></div>
+
+        <!-- ═══════════════════════════════════════════
+             FOOTER
+        ═══════════════════════════════════════════ -->
+        <footer class="footer" data-reveal>
+            <div class="footer-grid">
+
+                <!-- Colonne 1 : Logo + tagline -->
+                <div class="footer-col footer-brand">
+                    <span class="footer-logo">Gioia</span>
+                    <span class="footer-tagline">By Rosso Pomodoro</span>
+                    <p class="footer-desc">
+                        La joie de bien manger, de partager, et de savourer l'instant.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Colonne 2 : Contact -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-list">
+                        <li>Alger, Algérie</li>
+                        <li>+213 XX XX XX XX</li>
+                        <li>contact@gioia-dz.com</li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Horaires -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Horaires</h4>
+                    <ul class="footer-list">
+                        <li><strong>Lun – Ven</strong></li>
+                        <li>08h00 – 23h00</li>
+                        <li class="footer-list-spacer"></li>
+                        <li><strong>Sam – Dim</strong></li>
+                        <li>09h00 – 00h00</li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 : Navigation -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Navigation</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Notre Carte</a></li>
+                        <li><a href="#">Réserver</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer-bottom">
+                <span>© 2025 Gioia — By Rosso Pomodoro. Tous droits réservés.</span>
+            </div>
+        </footer>
+
     </div> <!-- /page-wrapper -->
+
+    <!-- ═══════════════════════════════════════════
+         SCROLL REVEAL & LENIS SMOOTH SCROLL (PREMIUM)
+    ═══════════════════════════════════════════ -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.2.3/dist/lenis.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialisation de Lenis pour le défilement fluide premium (inertie)
+            const lenis = new Lenis({
+                duration: 1.3,
+                easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easeOutExpo
+                smoothWheel: true,
+                smoothTouch: false,
+                wheelMultiplier: 1.05
+            });
+
+            function raf(time) {
+                lenis.raf(time);
+                requestAnimationFrame(raf);
+            }
+
+            requestAnimationFrame(raf);
+
+            // Scroll Reveal (IntersectionObserver)
+            const reveals = document.querySelectorAll('[data-reveal]');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.08,
+                rootMargin: '0px 0px -60px 0px'
+            });
+
+            reveals.forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
