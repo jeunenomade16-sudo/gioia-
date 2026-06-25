@@ -298,6 +298,7 @@ a {
   animation: float-pizza 6s ease-in-out infinite;
   animation-delay: 0s;
   transition: filter 0.3s ease;
+  will-change: transform, filter;
 }
 
 .pres-food-img:hover {
@@ -486,6 +487,7 @@ a {
   animation: float-coffee 5s ease-in-out infinite;
   animation-delay: -1s;
   transition: filter 0.3s ease;
+  will-change: transform, filter;
 }
 
 .card-food-img:hover {
@@ -836,6 +838,22 @@ a {
     border-bottom: none;
     border-top: 1px solid var(--color-border);
     order: 2; /* Move image below menu list on mobile */
+  }
+
+  /* ── PERFORMANCE MOBILE : désactiver animations et drop-shadows ── */
+  .pres-food-img,
+  .card-food-img,
+  .menu-header-img .section-food-img {
+    animation: none !important;
+    filter: none !important;
+    will-change: auto !important;
+    transition: none !important;
+  }
+
+  .pres-food-img:hover,
+  .card-food-img:hover,
+  .menu-header-img .section-food-img:hover {
+    filter: none !important;
   }
 
   .menu-card-content {
