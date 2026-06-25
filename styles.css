@@ -50,9 +50,6 @@ a {
   min-height: 100vh;
   position: relative;
   background-color: var(--color-bg);
-  background-image: url("bg-texture.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   box-shadow: 0 30px 100px rgba(0, 0, 0, 0.15); /* Premium depth shadow for the card look */
 }
 
